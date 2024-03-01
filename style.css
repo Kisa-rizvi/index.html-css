@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    }
+    @media screen and (max-width: 768px) {}
+      .container {
+          width: 100%;
+      }
+
+
+    
+    .banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(219, 215, 253, 0.65),rgba(219, 215, 253, 0.65)), url("media/background2.jpg");
+    background-size: cover;
+    }
+    .navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .logo{
+        width: 100px;
+        cursor: pointer;
+    }
+    .navbar ul li  {
+    list-style: none;
+    display: inline-block;
+    margin:0 20px;
+    font-weight: bold;
+    position: relative;
+
+    }
+    .navbar ul li  a{
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+    text-transform: uppercase;
+    font-weight: bold;
+    }
+    .navbar ul li ::after{
+        content: '';
+        height: 3px;
+        width: 0;
+        background: #121313;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+        transform: scaleX(0);
+        transition-timing-function: ease-in-out;
+    }
+    .navbar ul li :hover:after{
+        width: 100px;
+        transform: scaleX(1);
+    }
+    .content{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: #080808;
+    }
+    .content h1{
+        font-size: 300%;
+        margin-top: 80px;
+    }
+    .content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 30px;
+    }
+    
+    @keyframes slidein {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0%);
+        }
+      }
+    
+      .animation {
+        animation: slidein 7s ease-in-out infinite alternate;
+        
+      }
+      .text{
+        font-size: 18px;
+        font-family: sans-serif;
+        font-weight: bold;
+      }
+      .button{
+        background-color: #0a0a0a;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px; 
+        position: fixed;
+        bottom: 40px; 
+        margin-left: 90px;
+        transition: 0.2s linear;
+      }
+      
+      .button:hover {
+        background-color: #0b4499; 
+        scale: 1.1;
+        backdrop-filter: brightness(115%);
+        box-shadow: 10 10 10px 13px;
+
+      }
+      
+
+
+
+
+
+
+ 
